@@ -4,7 +4,7 @@ import AppLayout from '@/components/AppLayout';
 import { Tag, ShoppingBag, Plus, MessageCircle, Info, Search, SlidersHorizontal } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 const CONDITION_LABELS = {
   NEW:      { label: 'New',      color: 'text-green-400 bg-green-500/10 border-green-500/20' },

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Bell, X, MessageSquare, UserPlus, Zap, Calendar, CheckCheck } from 'lucide-react';
 import Link from 'next/link';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 // ── Shared panel content (header + list) ─────────────────────────────────
 function PanelContent({ notifications, unreadCount, markAllAsRead, markOneRead, closePanel, getIcon, formatType }) {

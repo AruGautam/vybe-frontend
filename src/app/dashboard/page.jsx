@@ -8,7 +8,7 @@ import VybeCard, { VybeCardGrid, NeonTag, LiveDot, MotionButton } from '@/compon
 import { Search, Zap, Calendar, Users, Thermometer, ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
 import api from '../../api';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 // ── Skeleton ──────────────────────────────────────────────────────────────
 function Skeleton() {

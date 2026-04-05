@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // Your Go/Fastify backend address
-  baseURL: `${process.env.NEXT_PUBLIC_API_URL}/api`,
+  baseURL: `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}/api`,
 });
 
 // This automatically attaches your JWT "VIP Pass" to every request

@@ -40,7 +40,7 @@ export interface UserProfile {
   recent_events?: Event[];
 }
 
-const API_BASE_URL = `${process.env.NEXT_PUBLIC_API_URL}/api`;
+const API_BASE_URL = `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}/api`;
 
 // Helper function to get auth token
 const getAuthToken = (): string | null => {

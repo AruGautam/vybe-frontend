@@ -8,7 +8,7 @@ import {
   ShieldCheck, BookOpen, Wrench
 } from 'lucide-react';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 const LOOKING_FOR_OPTIONS = [
   'Hackathon Team', 'Study Buddy', 'Gym Partner', 'Roommate',

@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import AppLayout from '@/components/AppLayout';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 const CAMPUS_SPOTS = [
   'Food Court', 'Library', 'Gazebo', 'TT Court', 'Badminton Court',

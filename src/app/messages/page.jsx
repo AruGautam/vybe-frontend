@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 import { ArrowLeft, Send, Users, MessageCircle, Search, Check, X, Calendar, Bell } from 'lucide-react';
 import AppLayout from '@/components/AppLayout';
 
-const BACKEND = process.env.NEXT_PUBLIC_API_URL;
+const BACKEND = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 // useSearchParams must be inside a Suspense boundary in Next.js app router
 function MessagesInner() {

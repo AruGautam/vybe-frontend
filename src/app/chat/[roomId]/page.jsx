@@ -4,7 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { io } from 'socket.io-client';
 import { ArrowLeft, Send } from 'lucide-react';
 
-const BACKEND = process.env.NEXT_PUBLIC_API_URL;
+const BACKEND = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 export default function ChatPage() {
   const { roomId } = useParams();
